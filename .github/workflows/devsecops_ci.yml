@@ -1,0 +1,13 @@
+# Goal: 
+
+name: DevSecOps
+
+on:
+    push:
+        branches: [master]
+
+
+jobs:
+    # Code stage with shift left
+    code-quality:
+        uses: ./.github/workflows/code-quality.yml
